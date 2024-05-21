@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Secion</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="../index.html"><img src="../IMG/logo_uleam.png" alt="logo"></a>
+        <a href="../soporte.html">Soporte</a>
+    </nav>
+    <main id="principal">
+        <div class="login">
+
+            <form action="" class="loginf" id="loginf">
+                <h2>Iniciar Sesión</h2>
+
+
+                <input type="email" class="logincorreo" placeholder="Correo" id="correo" required><br>
+                <input type="password" id="contraseña" class="logincontraseña" placeholder="Contraseña" required><br>
+                <div class="mensaje">
+                    <p id="mensaje"></p>
+                </div>
+                <!--redireccion a registro-->
+                <button type="button" onclick="login()" id="enviarFormularioBtn">Enviar</button>
+                <p class="textologin">¿No tienes cuenta? <a href="register.html"><b>Registrate aqui</b></a> </p>
+            </form>
+
+        </div>
+
+    </main>
+    <script src="scriptLogin.js"></script>
+</body>
+</html>

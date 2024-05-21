@@ -1,0 +1,180 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ec3237;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #424242;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-width: 200px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.menu {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.menu h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #ec3237;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d12d30;
+}
+
+.inventario-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 350px;
+}
+
+
+.notificacion_logo{
+    margin-top: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.notification-wrapper {
+    position: relative;
+}
+
+.notification-panel {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none; /* Para que no haya duplicación de bordes */
+    border-radius: 0 0 5px 5px; /* Bordes redondeados en la parte inferior */
+    padding: 10px;
+    z-index: 999; /* Asegúrate de que esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: #333; /* Color del texto */
+}
+
+
+.notification-panel.show {
+    display: block;
+}
+
+.notification-panel::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ccc transparent;
+}
+
+.info{
+    margin-top: 230px;
+}

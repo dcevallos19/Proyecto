@@ -1,0 +1,161 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ec3237;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #424242;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-width: 200px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo del contenido */
+}
+
+.selector-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.inventario-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Añade scroll si el contenido es muy alto */
+    height: 350px;
+}
+
+.inventario-item {
+    flex-grow: 1; /* Los elementos crecerán para ocupar todo el espacio disponible */
+    max-width: calc(33.333% - 20px); /* Ancho máximo para cada columna */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Añadido para separar los elementos verticalmente */
+    height: 80px;
+}
+
+
+.inventario-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.inventario-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.inventario-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.notificacion_logo{
+    margin-top: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.notification-wrapper {
+    position: relative;
+}
+
+.notification-panel {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none; /* Para que no haya duplicación de bordes */
+    border-radius: 0 0 5px 5px; /* Bordes redondeados en la parte inferior */
+    padding: 10px;
+    z-index: 999; /* Asegúrate de que esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: #333; /* Color del texto */
+}
+
+
+.notification-panel.show {
+    display: block;
+}
+
+.notification-panel::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ccc transparent;
+}
+
+

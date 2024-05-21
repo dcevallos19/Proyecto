@@ -1,0 +1,87 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ec3237; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    height: 20px;
+}
+
+nav {
+    background-color: #424242; /* Gris oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-width: 200px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('IMG/fondo_index.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+}
+
+.caja_texto{
+    padding: 20px;
+    border-radius: 10px;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.texto {
+    font-size: 34px; /* Tamaño de fuente original */
+}
+
+.grande {
+    font-size: 36px; /* Tamaño de fuente más grande */
+}
+
+.boton_acceder {
+    background-color: #c02424; /* Rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.boton_acceder:hover {
+    background-color: #990000;
+}
+
+

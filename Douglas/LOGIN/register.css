@@ -1,0 +1,133 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    background-image: url('../IMG/fondo.jpg'); /* Cambia 'ruta_de_la_imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el cuerpo */
+    background-position: center;
+}
+
+header {
+    background-color: #ec3237; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    height: 20px;
+}
+
+nav {
+    background-color: #424242; /* Gris oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    max-width: 200px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*boton*/
+
+button {
+    font-family: 'comic neue', sans-serif;
+    background-color: #c02424; /* Rojo */
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+    margin-left: 37%;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #990000;
+}
+
+
+/*estilo login*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.cuerpo-registro {
+    padding: 10px;
+    width: 700px;
+    background-color: var(--grisuleam);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.texto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cuerpo-registro form input {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px;
+    border-color: var(--oscuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cuerpo-registro form select {
+    font-family: 'comic neue', sans-serif;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px;
+    border-color: var(--oscuro);
+    color: var(--oscuro);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.izquierda,
+h2,
+p {
+    margin-left: 25px;
+}
+
+.contratexto {
+    font-size: small;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+

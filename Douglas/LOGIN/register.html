@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="register.css" />
+
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <a href="../index.html"><img src="../IMG/logo_uleam.png" alt="logo"></a>
+        <a href="../soporte.html">Soporte</a>
+    </nav>
+     <!--div principal-->
+     <main>
+        <div class="cuerpo-registro">
+            <form action="" class="registrof" id="registrof">
+                <h2>Registro</h2>
+                <div class="texto">
+                    <div class="izquierda">
+                        <input type="text" name="nombre_registro" id="nombre" placeholder="Nombre Completo">
+                        <input type="text" name="cedula_registro" id="cedula" placeholder="Número de Cédula">
+                        <input type="email" name="correo_registro" id="correo" placeholder="Correo Electrónico">
+                        <input type="password" name="contraseña_registro" id="contraseña" placeholder="Contraseña">
+                        <p class="contratexto">*La contraseña debe contener minimo 6 carácteres*</p>
+
+                    </div>
+                    <div class="derecha">
+
+                        <input type="text" name="telefono_registro" id="telefono" placeholder="Número de Teléfono">
+                        <input type="number" name="edad_registro" id="edad" placeholder="Edad">
+
+                        <select name="genero_registro" id="genero">
+                            <option value="defecto">Género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <button type="submit" id="registrarse">Registrarse</button>
+
+
+                <p class="textoregistro">¿Ya tienes una cuenta? <a href="login.html"><b>Iniciar Sesión</b></a>
+                </p>
+
+            </form>
+        </div>
+    </main>
+    <script src="scriptRegister.js"></script>
+</body>
+</html>

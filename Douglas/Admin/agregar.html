@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="opciones.css">
+</head>
+<body>
+    <header>
+<br><br>
+    </header>
+    <nav>
+        <a href="admin.html"><img src="../IMG/logo_uleam.png" alt="logo"></a>
+        <div class="texto_nav">
+            <a href="../soporte.html">Soporte</a>
+            <a href="../index.html">Cerrar sesión</a>
+        </div>
+        <div class="notification-wrapper">
+            <a id="openNotificationPanel" onclick="toggleNotificationPanel()">
+                <img src="../IMG/notification_icon.png" alt="Notificaciones" class="notificacion_logo">
+            </a>
+            <!-- Panel de notificaciones -->
+            <div id="notificationPanel" class="notification-panel">
+                Contenido del panel de notificaciones aquí...
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <aside class="menu">
+            <h2>Opciones</h2>
+            <ul>
+                <br>
+                <li><a href="agregar.html">Agregar Productos</a></li><br>
+                <li><a href="editar.html">Editar Productos</a></li><br>
+                <li><a href="eliminar.html">Eliminar Productos</a></li>
+            </ul>
+            <div class="info">
+                <p>Estas en modo de administrador</p>
+            </div>
+        </aside>
+        <main>
+            <form id="agregarProductoForm">
+                <label for="facultad">Facultad:</label>
+                <select id="facultad" required>
+                    <option value="facultad1">Facultad 1</option>
+                    <option value="facultad2">Facultad 2</option>
+                    <!-- Agregar más opciones según sea necesario -->
+                </select>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" required>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" required></textarea>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="../panel.js"></script>
+</body>
+</html>
